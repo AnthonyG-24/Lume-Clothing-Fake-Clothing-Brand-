@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/home/hero.css" />
-    <link rel="stylesheet" href="css/about/catalogue.css" />
+    <link rel="stylesheet" href="css/about/about.css" />
+    <link rel="stylesheet" href="css/catalogue/catalogue.css" />
+    <link rel="stylesheet" href="css/shop/shop.css" />
     <link rel="stylesheet" href="css/contact/contact.css" />
+    <link rel="stylesheet" href="css/footer.css" />
 
     <!--Font Awesome-->
     <link
@@ -35,7 +38,9 @@
 
         <div class="nav-middle">
           <ul>
+            <li class="footer-link"><a href="#catalogue">About</a></li>
             <li class="footer-link"><a href="#catalogue">Catalogue</a></li>
+            <li class="footer-link"><a href="#catalogue">Shop</a></li>
             <li class="footer-link"><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -52,7 +57,7 @@
     </nav>
 
     <!--Hero-->
-    <header class="hero-section">
+    <header id="#home" class="hero-section">
       <div class="hero-wrapper">
         <div class="hero-left">
           <h1 class="hero-name">
@@ -78,6 +83,34 @@
     </header>
 
     <!--About Section-->
+    <section id="#about" class="about-section">
+      <div class="about-content">
+        <div class="about-left">
+          <img class="about-img" src="assets/fashion-model.jpg" alt="" />
+        </div>
+
+        <div class="about-right">
+          <div class="about-right-container">
+            <h2>Lorem ipsum</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea
+              laudantium enim quia! Alias voluptatum suscipit nostrum
+              repudiandae. Ullam nulla alias asperiores quidem. Reiciendis,
+              veritatis sequi perspiciatis debitis eos ratione.
+            </p>
+
+            <div class="about-highlights">
+              <h3>Lorem ipsum</h3>
+              <ul>
+                <li>Lorem</li>
+                <li>Lorem</li>
+                <li>Lorem</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!--Catalogue Section-->
     <section id="catalogue" class="catalogue-section">
@@ -137,6 +170,81 @@
     </section>
 
     <!--Shopping Section-->
+    <section class="shop-section">
+      <h2>Lorem</h2>
+      <div class="shop-container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="shop-item">
+          <img
+            class="shop-item-img"
+            src="assets/dress-shirt-and-shoes.jpg"
+            alt=""
+          />
+          <p>Item Info</p>
+          <button class="shop-cta">BUY</button>
+        </div>
+
+        <div class="shop-item">
+          <img
+            class="shop-item-img"
+            src="assets/dress-shirt-and-shoes.jpg"
+            alt=""
+          />
+          <p>Item Info</p>
+          <button class="shop-cta">BUY</button>
+        </div>
+
+        <div class="shop-item">
+          <img
+            class="shop-item-img"
+            src="assets/dress-shirt-and-shoes.jpg"
+            alt=""
+          />
+          <p>Item Info</p>
+          <button class="shop-cta">BUY</button>
+        </div>
+
+        <div class="shop-item">
+          <img
+            class="shop-item-img"
+            src="assets/dress-shirt-and-shoes.jpg"
+            alt=""
+          />
+          <p>Item Info</p>
+          <button class="shop-cta">BUY</button>
+        </div>
+
+        <div class="shop-item">
+          <img
+            class="shop-item-img"
+            src="assets/dress-shirt-and-shoes.jpg"
+            alt=""
+          />
+          <p>Item Info</p>
+          <button class="shop-cta">BUY</button>
+        </div>
+
+        <div class="shop-item">
+          <img
+            class="shop-item-img"
+            src="assets/dress-shirt-and-shoes.jpg"
+            alt=""
+          />
+          <p>Item Info</p>
+          <button class="shop-cta">BUY</button>
+        </div>
+
+        <div class="shop-item">
+          <img
+            class="shop-item-img"
+            src="assets/dress-shirt-and-shoes.jpg"
+            alt=""
+          />
+          <p>Item Info</p>
+          <button class="shop-cta">BUY</button>
+        </div>
+      </div>
+    </section>
 
     <!-- Form/Contact Section -->
     <section id="contact" class="contact-section">
@@ -241,6 +349,36 @@
         </div>
       </div>
     </section>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li class="footer-link"><a href="#home">Home</a></li>
+            <li class="footer-link"><a href="#about">About</a></li>
+            <li class="footer-link"><a href="#catalogue">Catalogue</a></li>
+            <li class="footer-link"><a href="#shop">Shop</a></li>
+            <li class="footer-link">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <div>
+            <strong>Email:</strong>
+            <p>hello@lumeclothing.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 <span id="year"></span>Lume Clothing.</p>
+      </div>
+    </footer>
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="js/navbar.js"></script>
