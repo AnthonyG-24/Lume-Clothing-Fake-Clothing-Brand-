@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Site</title>
+
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/home/hero.css" />
+    <link rel="stylesheet" href="css/about/catalogue.css" />
+    <link rel="stylesheet" href="css/contact/contact.css" />
+
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--Navigation Bar-->
+    <nav>
+      <div class="nav-wrapper">
+        <div class="left-nav">
+          <img
+            class="logo-nav"
+            src="assets/Lume-logo/Lume Clothing-logo-transparent.png"
+            alt="lume logo"
+          />
+        </div>
+
+        <div class="hamburger" id="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="nav-middle">
+          <ul>
+            <li class="footer-link"><a href="#catalogue">Catalogue</a></li>
+            <li class="footer-link"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-right">
+          <a href="#shop"><i class="fa-solid fa-bag-shopping"></i></a>
+          <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+        </div>
+
+        <div id="search-bar" class="search-bar">
+          <input type="text" placeholder="Search..." />
+        </div>
+      </div>
+    </nav>
+
+    <!--Hero-->
+    <header class="hero-section">
+      <div class="hero-wrapper">
+        <div class="hero-left">
+          <h1 class="hero-name">
+            Lume<br />
+            Clothing
+          </h1>
+          <p class="hero-subtext">
+            Elevate your everyday look with timeless pieces designed for
+            comfort, confidence, and style.
+          </p>
+          <button class="header-cta">SHOP NOW</button>
+        </div>
+        <div class="hero-right">
+          <div class="hero-background">
+            <img
+              class="hero-img"
+              src="assets/lady_in_dress.jpg"
+              alt="Lady in dress posing in front of camera"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--About Section-->
+
+    <!--Catalogue Section-->
+    <section id="catalogue" class="catalogue-section">
+      <div class="catalogue-content">
+        <h1>Our Collection</h1>
+        <p class="catalogue-description">
+          Discover versatile pieces that move with you — from modern essentials
+          to statement looks. Lume Clothing brings you fashion that feels
+          effortless, bold, and uniquely yours.
+        </p>
+      </div>
+
+      <div class="wrapper">
+        <div class="item item1">
+          <img
+            class="item-img"
+            src="assets/catalogue/fashion-1.jpg"
+            alt="Model wearing casual fashion outfit"
+          />
+        </div>
+        <div class="item item2">
+          <img
+            class="item-img"
+            src="assets/catalogue/fashion-2.jpg"
+            alt="Model in evening wear"
+          />
+        </div>
+        <div class="item item3">
+          <img
+            class="item-img"
+            src="assets/catalogue/heels.jpg"
+            alt="High heels on display"
+          />
+        </div>
+        <div class="item item4">
+          <img
+            class="item-img"
+            src="assets/catalogue/shoes.jpg"
+            alt="Stylish pair of shoes"
+          />
+        </div>
+        <div class="item item5">
+          <img
+            class="item-img"
+            src="assets/catalogue/heels.jpg"
+            alt="Classic heels with modern design"
+          />
+        </div>
+        <div class="item item6">
+          <img
+            class="item-img"
+            src="assets/catalogue/suits.jpg"
+            alt="Tailored suits for modern style"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!--Shopping Section-->
+
+    <!-- Form/Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="contact-content">
+        <!-- Left Side: Contact Form -->
+        <div class="form-left-side">
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-subtitle">
+            Have a question about sizing, styling, or your order? We’d love to
+            hear from you. Fill out the form below and our team will get back to
+            you as soon as possible.
+          </p>
+
+          <div class="success-message" id="successMessage">
+            Thank you! Your message has been sent successfully.
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-input"
+                placeholder="Your Name"
+                autocomplete="name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                placeholder="you@example.com"
+                autocomplete="email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-input form-textarea"
+                placeholder="Tell us how we can help..."
+                required
+                minlength="10"
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Right Side: Contact Info -->
+        <div class="contact-right-side">
+          <h2 class="contact-info-title">Contact Information</h2>
+          <p class="contact-info-subtitle">
+            We’re here to help you look and feel your best.
+          </p>
+
+          <div class="contact-methods">
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div class="contact-details">
+                <h3>Email</h3>
+                <p>
+                  <a href="mailto:hello@lumeclothing.com"
+                    >hello@lumeclothing.com</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-brands fa-facebook"></i>
+              <div class="contact-details">
+                <h3>Facebook</h3>
+                <p><a href="#">facebook.com/lumeclothing</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-brands fa-instagram"></i>
+              <div class="contact-details">
+                <h3>Instagram</h3>
+                <p><a href="#">@lumeclothing</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-brands fa-tiktok"></i>
+              <div class="contact-details">
+                <h3>TikTok</h3>
+                <p><a href="#">@lumeclothing</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="js/navbar.js"></script>
+  </body>
+</html>

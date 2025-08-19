@@ -1,0 +1,164 @@
+@import url("font/clash-display.css");
+@import url("fonts/archivo.css");
+
+:root {
+  /* COLORS */
+  --neutral-light: #f1faee;
+  --neutral-dark: #1d3557;
+  --primary: #457b9d;
+  --support: #a8dadc;
+  --accent: #e63946;
+
+  --section-bg: var(--neutral-light);
+  --section-text: var(--neutral-dark);
+  --header-color: var(--primary);
+
+  /* FONT FAMILIES */
+  --font-body: "Archivo", sans-serif;
+  --font-heading: "ClashDisplay", sans-serif;
+
+  /* FONT WEIGHTS */
+  --fw-thin: 100;
+  --fw-extra-light: 200;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extra-bold: 800;
+  --fw-black: 900;
+  --fw-variable: 100 900;
+
+  /* FONT SIZES */
+  --fs-base: 1rem; /* 16px */
+  --fs-h6: 1.25rem; /* 20px */
+  --fs-h5: 1.5625rem; /* 25px */
+  --fs-h4: 1.953rem; /* 31px */
+  --fs-h3: 2.441rem; /* 39px */
+  --fs-h2: 3.052rem; /* 49px */
+  --fs-h1: 3.815rem; /* 61px */
+
+  /* DISPLAY SIZES - For hero sections and large displays */
+  --fs-display-lg: 4.769rem; /* 76px - h1 × 1.25 */
+  --fs-display-xl: 5.961rem; /* 95px - display-lg × 1.25 */
+  --fs-display-2xl: 7.451rem; /* 119px - display-xl × 1.25 */
+
+  /* LINE HEIGHTS */
+  --lh-base: 1.5;
+  --lh-h6: 1.5;
+  --lh-h5: 1.5;
+  --lh-h4: 1.3;
+  --lh-h3: 1.2;
+  --lh-h2: 1.1;
+  --lh-h1: 1;
+
+  /* DISPLAY LINE HEIGHTS */
+  --lh-display-lg: 0.95;
+  --lh-display-xl: 0.9;
+  --lh-display-2xl: 0.85;
+
+  /* LETTER SPACING */
+  --ls-h6: -0.005rem;
+  --ls-h5: -0.008rem;
+  --ls-h4: -0.01rem;
+  --ls-h3: -0.015rem;
+  --ls-h2: -0.018rem;
+  --ls-h1: -0.02rem;
+
+  /* DISPLAY LETTER SPACING */
+  --ls-display-lg: -0.025rem;
+  --ls-display-xl: -0.03rem;
+  --ls-display-2xl: -0.035rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  line-height: var(--lh-base);
+  color: var(--neutral-dark);
+  background-color: var(--neutral-light);
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* HEADERS */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--header-color);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  line-height: var(--lh-h1);
+  letter-spacing: var(--ls-h1);
+}
+h2 {
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  letter-spacing: var(--ls-h2);
+}
+h3 {
+  font-size: var(--fs-h3);
+  line-height: var(--lh-h3);
+  letter-spacing: var(--ls-h3);
+}
+h4 {
+  font-size: var(--fs-h4);
+  line-height: var(--lh-h4);
+  letter-spacing: var(--ls-h4);
+}
+h5 {
+  font-size: var(--fs-h5);
+  line-height: var(--lh-h5);
+  letter-spacing: var(--ls-h5);
+}
+h6 {
+  font-size: var(--fs-h6);
+  line-height: var(--lh-h6);
+  letter-spacing: var(--ls-h6);
+}
+
+/* DISPLAY CLASSES - For hero sections and special displays */
+.display-2xl {
+  font-size: var(--fs-display-2xl);
+  line-height: var(--lh-display-2xl);
+  letter-spacing: var(--ls-display-2xl);
+  font-family: var(--font-heading);
+  color: var(--header-color);
+  font-weight: var(--fw-black);
+}
+
+.display-xl {
+  font-size: var(--fs-display-xl);
+  line-height: var(--lh-display-xl);
+  letter-spacing: var(--ls-display-xl);
+  font-family: var(--font-heading);
+  color: var(--header-color);
+  font-weight: var(--fw-extra-bold);
+}
+
+.display-lg {
+  font-size: var(--fs-display-lg);
+  line-height: var(--lh-display-lg);
+  letter-spacing: var(--ls-display-lg);
+  font-family: var(--font-heading);
+  color: var(--header-color);
+  font-weight: var(--fw-bold);
+}
