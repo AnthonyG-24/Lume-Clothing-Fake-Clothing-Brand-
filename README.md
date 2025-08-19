@@ -9,19 +9,16 @@ A responsive demo website for a fictional clothing brand, **Lume Clothing**, bui
 - Responsive design for mobile and desktop
 - Hero section with branding and call-to-action
 - Product catalogue showcase with images
+- Shopping section to purchase clothing
 - Contact form with validation
-- Semantic HTML5 structure
-- Custom typography and color palette
 
 ---
 
 ## Technologies Used
 
-- HTML5
-- CSS3
-- Flexbox & Grid layout
+- HTML
+- CSS
 - Font Awesome icons
-- Responsive design principles
 
 ---
 
@@ -29,13 +26,4 @@ A responsive demo website for a fictional clothing brand, **Lume Clothing**, bui
 
 ![Lume Clothing Hero](assets/lady_in_dress.jpg)
 
----
 
-## Usage
-
-This is a front-end demo project. You can clone the repository and open `index.html` in your browser to explore the layout and features.
-
-```bash
-git clone https://github.com/yourusername/lume-clothing.git
-cd lume-clothing
-open index.html
