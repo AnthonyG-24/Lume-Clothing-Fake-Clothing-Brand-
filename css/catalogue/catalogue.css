@@ -104,3 +104,59 @@
 .item6 {
   animation-delay: calc(30s / 6 * (6 - 6) * -1);
 }
+
+@media (max-width: 800px) {
+  .catalogue-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .catalogue-content {
+    margin-bottom: 3rem;
+    max-width: 90%;
+  }
+
+  .catalogue-content h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 1rem;
+  }
+
+  .catalogue-description {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    max-width: 90%;
+  }
+
+  .wrapper {
+    margin-top: 3rem;
+    width: 95%;
+  }
+}
+
+@media (max-width: 600px) {
+  .catalogue-section {
+    padding: 2rem 1rem;
+    min-height: 90vh;
+  }
+
+  .catalogue-content {
+    margin-bottom: 2rem;
+  }
+
+  .catalogue-content h1 {
+    font-size: clamp(1.75rem, 6vw, 2.5rem);
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+  }
+
+  .catalogue-description {
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+    line-height: 1.5;
+  }
+
+  .item {
+    height: 24rem;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+}

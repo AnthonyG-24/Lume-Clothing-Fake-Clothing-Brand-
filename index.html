@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Shopping Site</title>
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="assets/lume-logo/Lume Clothing-logo.png"
+    />
 
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/nav.css" />
@@ -86,25 +92,28 @@
     <section id="about" class="about-section">
       <div class="about-content">
         <div class="about-left">
-          <img class="about-img" src="assets/fashion-model.jpg" alt="" />
+          <img
+            class="about-img"
+            src="assets/fashion-model.jpg"
+            alt="Fashion model showcasing a stylish outfit"
+          />
         </div>
 
         <div class="about-right">
           <div class="about-right-container">
-            <h2>Lorem ipsum</h2>
+            <h2>About Lume Clothing</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea
-              laudantium enim quia! Alias voluptatum suscipit nostrum
-              repudiandae. Ullam nulla alias asperiores quidem. Reiciendis,
-              veritatis sequi perspiciatis debitis eos ratione.
+              At Lume Clothing, we craft fashion that blends style and comfort.
+              Our collections are designed to empower you, whether you're
+              dressing for everyday life or special occasions.
             </p>
 
             <div class="about-highlights">
-              <h3>Lorem ipsum</h3>
+              <h3>Why Choose Us?</h3>
               <ul>
-                <li>Lorem</li>
-                <li>Lorem</li>
-                <li>Lorem</li>
+                <li>High-quality fabrics for ultimate comfort</li>
+                <li>Trendy, versatile designs for every occasion</li>
+                <li>Committed to sustainable fashion practices</li>
               </ul>
             </div>
           </div>
@@ -171,79 +180,138 @@
 
     <!--Shopping Section-->
     <section id="shop" class="shop-section">
-      <h2>Lorem</h2>
+      <h2>Shop the Latest</h2>
+      <h3>Our top sellers this season</h3>
+      <!-- Category Tag Selector -->
+      <div class="tag-selector">
+        <button class="tag active" data-category="all">All</button>
+        <button class="tag" data-category="men">Men</button>
+        <button class="tag" data-category="women">Women</button>
+        <button class="tag" data-category="tshirt">T-Shirts</button>
+        <button class="tag" data-category="hoodie">Hoodies</button>
+        <button class="tag" data-category="jacket">Jackets</button>
+        <button class="tag" data-category="dresses">Dresses</button>
+      </div>
       <div class="shop-container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <div class="shop-item">
+        <!-- Item 1 -->
+        <div class="shop-item" data-category="men tshirt">
           <img
-            class="shop-item-img"
-            src="assets/dress-shirt-and-shoes.jpg"
-            alt=""
+            src="assets/clothing/white-t-shirt.jpg"
+            alt="Classic White T-Shirt"
           />
-          <p>Item Info</p>
-          <button class="shop-cta">BUY</button>
+          <h3>Classic White T-Shirt</h3>
+
+          <div class="product-tags">
+            <span>Men</span>
+            <span>T-Shirt</span>
+          </div>
+
+          <p>
+            Comfortable cotton tee perfect for casual outings and everyday wear.
+          </p>
+          <span class="price">$25.00</span>
+
+          <div class="sizes">
+            <label for="size1">Size:</label>
+            <select id="size1">
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+            </select>
+          </div>
+
+          <div class="item-actions">
+            <button class="wishlist">
+              <i class="fa-solid fa-heart"></i> Wishlist
+            </button>
+            <button class="quick-view">
+              <i class="fa-solid fa-eye"></i> Quick View
+            </button>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
         </div>
 
-        <div class="shop-item">
-          <img
-            class="shop-item-img"
-            src="assets/dress-shirt-and-shoes.jpg"
-            alt=""
-          />
-          <p>Item Info</p>
-          <button class="shop-cta">BUY</button>
+        <!-- Item 2 -->
+        <div class="shop-item" data-category="women jacket">
+          <img src="assets/clothing/denim-jacket.jpg" alt="Denim Jacket" />
+          <h3>Denim Jacket</h3>
+
+          <div class="product-tags">
+            <span>Women</span>
+            <span>Jacket</span>
+          </div>
+
+          <p>
+            Classic denim jacket with a modern cut, perfect for layering any
+            outfit.
+          </p>
+          <span class="price">$60.00</span>
+
+          <div class="sizes">
+            <label for="size2">Size:</label>
+            <select id="size2">
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+            </select>
+          </div>
+
+          <div class="item-actions">
+            <button class="wishlist">
+              <i class="fa-solid fa-heart"></i> Wishlist
+            </button>
+            <button class="quick-view">
+              <i class="fa-solid fa-eye"></i> Quick View
+            </button>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
         </div>
 
-        <div class="shop-item">
-          <img
-            class="shop-item-img"
-            src="assets/dress-shirt-and-shoes.jpg"
-            alt=""
-          />
-          <p>Item Info</p>
-          <button class="shop-cta">BUY</button>
-        </div>
+        <!-- Item 3 -->
+        <div class="shop-item" data-category="unisex hoodie">
+          <img src="assets/clothing/black-hoodie.jpg" alt="Black Hoodie" />
+          <h3>Black Hoodie</h3>
 
-        <div class="shop-item">
-          <img
-            class="shop-item-img"
-            src="assets/dress-shirt-and-shoes.jpg"
-            alt=""
-          />
-          <p>Item Info</p>
-          <button class="shop-cta">BUY</button>
-        </div>
+          <div class="product-tags">
+            <span>Unisex</span>
+            <span>Hoodie</span>
+          </div>
 
-        <div class="shop-item">
-          <img
-            class="shop-item-img"
-            src="assets/dress-shirt-and-shoes.jpg"
-            alt=""
-          />
-          <p>Item Info</p>
-          <button class="shop-cta">BUY</button>
-        </div>
+          <p>
+            Cozy fleece hoodie with adjustable drawstrings for a perfect fit.
+          </p>
+          <span class="price">$45.00</span>
 
-        <div class="shop-item">
-          <img
-            class="shop-item-img"
-            src="assets/dress-shirt-and-shoes.jpg"
-            alt=""
-          />
-          <p>Item Info</p>
-          <button class="shop-cta">BUY</button>
-        </div>
+          <div class="sizes">
+            <label for="size3">Size:</label>
+            <select id="size3">
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+            </select>
+          </div>
 
-        <div class="shop-item">
-          <img
-            class="shop-item-img"
-            src="assets/dress-shirt-and-shoes.jpg"
-            alt=""
-          />
-          <p>Item Info</p>
-          <button class="shop-cta">BUY</button>
+          <div class="item-actions">
+            <button class="wishlist">
+              <i class="fa-solid fa-heart"></i> Wishlist
+            </button>
+            <button class="quick-view">
+              <i class="fa-solid fa-eye"></i> Quick View
+            </button>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </button>
+          </div>
         </div>
       </div>
+      <button class="more-cta">SEE MORE</button>
     </section>
 
     <!-- Form/Contact Section -->

@@ -211,6 +211,9 @@
 
   .about-highlights {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .about-highlights h3 {
