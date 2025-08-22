@@ -25,5 +25,7 @@ A responsive demo website for a fictional clothing brand, **Lume Clothing**, bui
 ## Preview
 
 ![Lume Clothing Hero](assets/lady_in_dress.jpg)
+scoopsandsmilesparlors.netlify.app
+
 
 
